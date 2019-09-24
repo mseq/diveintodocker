@@ -1,0 +1,1 @@
+docker container run --rm -itd -p 5000:5000 -e FLASK_APP=app.py -e FLASK_DEBUG=1 --name web2 -v C:/Users/marce/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/mseq/code/diveintodocker/src/06-docker-in-the-real-world/09-linking-containers-with-docker-networks:/app -v /app/public --net firstnetwork web2
